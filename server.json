@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/overture-places",
+  "title": "Overture Places",
+  "description": "Overture Maps places — business and point-of-interest locations (name,",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/overture-places",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-overture-places",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/overture-places/mcp"
+    }
+  ]
+}
