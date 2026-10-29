@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-overture-places",
-  "version": "0.1.0",
-  "description": "Overture Maps places — business and point-of-interest locations (name,",
+  "version": "0.2.0",
+  "description": "Overture Maps places — business and point-of-interest locations (name, category, confidence, address, websites, phones, socials, brand) for the United States and the United Kingdom, from the Overture Maps Foundation places theme (CDLA-Permissive-2.0 / Apache-2.0 / CC0-1.0 by source).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-overture-places": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "overture-places"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-overture-places.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/overture-places",
   "pipeworx": {
-    "sourceHash": "v1-f40dbaccae6f8a474599397a5ac8c4eda385ccb832a4a70fe376b635bb4ae47d",
-    "sourceCommit": "0ce6905893fe8da0d285be2f05754a4200d67371"
+    "mode": "gateway",
+    "slug": "overture-places",
+    "gatewaySlug": "overture-places",
+    "sourceHash": "v1-1c41bcb32a556506751f7434634dbb60694d131cd6f1f82ccec05430e0eba9e9",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
