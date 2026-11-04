@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-overture-places",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Overture Maps places — business and point-of-interest locations (name, category, confidence, address, websites, phones, socials, brand) for the United States and the United Kingdom, from the Overture Maps Foundation places theme (CDLA-Permissive-2.0 / Apache-2.0 / CC0-1.0 by source).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "overture-places",
     "gatewaySlug": "overture-places",
-    "sourceHash": "v1-1c41bcb32a556506751f7434634dbb60694d131cd6f1f82ccec05430e0eba9e9",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-c89111f1aaf4104bf4126d6c9f469d24c5e3ae444f9ceb620e865af1d4bd32f9",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
